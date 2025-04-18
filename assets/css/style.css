@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
+    margin: 0;
     padding: 0%;
     text-decoration: none;
     list-style-type: none;
@@ -8,14 +9,12 @@
 }
 
 .one {
-    text-align: center;
-    font-family: "Poppins";
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 100%;
-    letter-spacing: 0%;
     display: flex;
+    align-items: center;
     justify-content: center;
+    flex-direction: column;
+    margin-top: 70px;
+    margin-bottom: 33px;
 }
 
 .container {
@@ -34,15 +33,33 @@
     margin-right: -12px;
 }
 
+h3 {
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #000000;
+}
+
 .card {
-    width: 100%;
     padding-left: 25px;
     padding-right: 25px;
-    border: solid rgb(201, 197, 197) 3px;
-    height: auto;
+    border: solid rgb(201, 197, 197) 1px;
     display: flex;
     flex-direction: column;
     border-radius: 20px;
+    transition: box-shadow 100ms linear;
+}
+
+h2 {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    margin-top: 21px;
+    margin-bottom: 12px;
 }
 
 .img1 {
@@ -81,30 +98,39 @@ p {
     font-weight: 400;
     font-size: 16px;
     color: #000000;
+    opacity: 0.6;
     line-height: 150%;
 }
 
-.mr-8{
+.mr-8 {
     margin-right: 8px;
 }
 
 .icon {
     display: flex;
     align-items: center;
+    margin-bottom: 17px;
 }
 
 
 .icon2 {
     display: flex;
     align-items: center;
+    margin-bottom: 14px;
 }
 
 .icon3 {
     display: flex;
     align-items: center;
+    margin-bottom: 32px;
 }
 
 button:hover {
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24);
     cursor: pointer;
+}
+
+.card:hover{
+    box-shadow: 0px 8px 35px 0px #0000001A;
+    border: 0;
 }
